@@ -1,0 +1,93 @@
+h1{
+	font: 16pt oswald, verdana, arial;
+	color: #014A7F;
+	background: url("../img/molecula.png") no-repeat top left;
+	text-indent: 38px;
+	display: inline-block;
+	min-height: 40px;
+	text-shadow: 1px 1px 1px grey;
+	margin-top: 5px;
+}
+h2{
+	background: url("../img/net.png") no-repeat top left;
+	text-indent: 28px;
+	font: 14pt oswald, verdana, arial, serif;
+	color: #014A7F;
+	margin-bottom: 4px;
+	min-height: 35px;
+
+}
+h3{
+	background: url("../img/probeta_gris.png") no-repeat top left;
+	text-indent: 22px;
+	font: 12pt oswald, verdana, arial, serif;
+	color: #014A7F;
+	margin-bottom: 4px;
+}
+p{
+	margin-top: 0px;
+	padding-left: 10px;
+}
+article a:link, a:visited{
+	font: 10pt Roboto, serif, arial;
+	color: #014A7F;
+	text-decoration: none;
+}
+article a:hover{
+	text-decoration: underline;
+}
+article ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+	padding-left: 7px;
+	margin-left: 20px;
+}
+article ul li {
+    background-image: url(../img/left_to_right_grey_10.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding-left: 15px;
+	margin-bottom: 6px;
+}
+.dialog{
+	text-align: left;
+	font: 10pt Raleway, Arial, Helvetica, sans-serif;
+}
+table .icotable{ text-align: center; }
+.hidden { display: none }
+cite{
+	color: grey;
+}
+.ejemplo{
+	background-color: whitesmoke;
+	padding: 10px;
+	margin: 12px;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+	box-shadow:         3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+	border-radius: 16px 4px 16px 2px;
+}
+
+a.myButton {
+	background-color:#79bbff;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important; 
+	font-family:Trebuchet MS;
+	font-size:17px !important; 
+	padding:16px 31px;
+	text-decoration:none !important; 
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

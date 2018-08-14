@@ -1,0 +1,97 @@
+body {
+	margin: 0px;
+	text-align: center;
+	padding: 0px;
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: center;
+	font: 11pt Raleway, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #34434c;
+}
+header {
+	height:150px;
+	background: lightgrey url("../img/header4.jpg") no-repeat top left;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+@media print {
+	header { display: none }
+	nav { display: none }
+}
+.header-text {
+	font-size: 15pt;
+	color: #ffffff;
+	width: 480px;
+	padding-left: 80px;
+	text-shadow: 1px 1px 2px black;
+	text-align: right;
+}
+.header-logos{
+	display: flex;
+	flex-flow: row;
+	align-items: flex-end;
+	padding-right: 25px;
+}
+.header-logos img{
+	margin-left: 25px;
+}
+#main {
+	display: flex;
+	flex-flow: row;
+	min-height: 79vh;
+	text-align: left;
+}
+#main > article {
+	flex: 2;
+	padding: 15px;
+	text-align: left;
+	padding-bottom: 30px;
+	/*max-height: 75vh;*/
+	overflow-y: auto;
+}
+ 
+#main > nav {
+	flex: 1;
+	max-width: 290px;
+	overflow: auto;
+	padding-right: 4px;
+	border-right: 0px dashed #014A7F;
+	background: #bababa; /* Old browsers */
+	background: -moz-linear-gradient(left,  #bababa 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#bababa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #bababa 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #bababa 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #bababa 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to right,  #bababa 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none; /* IE10+ */
+	padding-bottom: 30px;
+}
+ 
+@media all and (max-width: 640px) {   
+   #main {
+      flex-flow: column;
+   }
+ 
+   #main > article, #main > nav, #main > aside {
+    	order: 0;
+		padding: 4px;
+   }
+ 
+   #main > nav, header, footer {
+      min-height: 10px;
+      max-height: 10px;
+   }
+}
+footer {
+	height: 0px;
+	background-position: bottom left;
+	/*border-bottom: 2px solid grey;*/
+}

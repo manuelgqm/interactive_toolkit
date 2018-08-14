@@ -1,0 +1,14 @@
+span{ color: #014A7F; }
+thead{ color:#014A7F; font-weight: bold}
+td.hphrases{
+	vertical-align: top;
+	line-height: 30px; 
+}
+.ui-dialog a:link, a:visited{
+	font: 10pt Roboto, serif, arial;
+	color: #014A7F;
+	text-decoration: none;
+}
+.ui-dialog a:hover{
+	text-decoration: underline;
+}
